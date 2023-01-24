@@ -20,15 +20,9 @@ const postLogger = (req, res, next) => {
   next();
 };
 
-const notFoundLogger = (req, res) => {
-  res.status(404).json({ error: 'Not found' }).end();
-  console.log('HTTP Status 404\n');
-};
-
 module.exports = {
   requestsLogger,
   postLogger,
-  notFoundLogger
 };
 
 // ? const ipAddress = req.socket.remoteAddress; loopback ::1 (ipv4) 127.0.0.1 (ipv6)

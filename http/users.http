@@ -1,0 +1,29 @@
+GET http://localhost:3002/users
+
+###
+
+POST http://localhost:3002/users
+Content-Type: application/json
+
+{
+    "name": "Rodri",
+    "number": "+593515669852"
+}
+
+###
+
+DELETE http://localhost:3002/users/63ceaa724a83ea8ff194c007
+
+###
+
+DELETE http://localhost:3002/users
+
+###
+
+PUT http://localhost:3002/users/63ced47e7903d75759c0d40b
+Content-Type: application/json
+
+{
+    "name": "Rodrigo",
+    "number": "+593515669444"
+}

@@ -8,3 +8,5 @@ mongoose
   .connect(connectionString)
   .then(() => console.log('Database connected'))
   .catch(err => console.log(err));
+
+process.on('uncaughtException', () => mongoose.disconnect())
